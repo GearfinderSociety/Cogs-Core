@@ -1,0 +1,81 @@
+skill_woodcutter-handler:
+  Skills:
+  - setvariable{var=skill.log_type;type=STRING;value="<target.block.type>"} @SelfLocation{y=1}
+  - delay 0
+  - skill{s=[
+      - breakblock{forcesync=true;doDrops=false}
+      - skill{s=skill_woodcutter-execute}
+      - delay 10
+      - sudoskill{s=[ 
+          - teleport @TriggerLocation{y=-1}
+        ];cat=true} @IIR{r=5;conditions=[
+          - entityItemType{m=OAK_PLANKS,SPRUCE_PLANKS,BIRCH_PLANKS,JUNGLE_PLANKS,ACACIA_PLANKS,DARK_OAK_PLANKS,MANGROVE_PLANKS,CHERRY_PLANKS,CRIMSON_PLANKS,WARPED_PLANKS,BAMBOO_PLANKS,PALE_OAK_PLANKS} true
+          - hasaura{n=conveyor_moving} false
+        ]}
+    ]} @SelfLocation{y=1;blockcentered=true;blocktypes=#WOOD,#LOG,#HYPHAE,#STEM,BAMBOO_BLOCK,STRIPPED_BAMBOO_BLOCK}
+
+
+skill_woodcutter-execute:
+  Conditions:
+  - ( variableEquals{var=skill.log_type;value="OAK_LOG"} || variableEquals{var=skill.log_type;value="OAK_WOOD"} || variableEquals{var=skill.log_type;value="STRIPPED_OAK_LOG"} || variableEquals{var=skill.log_type;value="STRIPPED_OAK_WOOD"} ) castInstead woodcutter_oak
+  - ( variableEquals{var=skill.log_type;value="SPRUCE_LOG"} || variableEquals{var=skill.log_type;value="SPRUCE_WOOD"} || variableEquals{var=skill.log_type;value="STRIPPED_SPRUCE_LOG"} || variableEquals{var=skill.log_type;value="STRIPPED_SPRUCE_WOOD"} ) castInstead woodcutter_spruce
+  - ( variableEquals{var=skill.log_type;value="BIRCH_LOG"} || variableEquals{var=skill.log_type;value="BIRCH_WOOD"} || variableEquals{var=skill.log_type;value="STRIPPED_BIRCH_LOG"} || variableEquals{var=skill.log_type;value="STRIPPED_BIRCH_WOOD"} ) castInstead woodcutter_birch
+  - ( variableEquals{var=skill.log_type;value="JUNGLE_LOG"} || variableEquals{var=skill.log_type;value="JUNGLE_WOOD"} || variableEquals{var=skill.log_type;value="STRIPPED_JUNGLE_LOG"} || variableEquals{var=skill.log_type;value="STRIPPED_JUNGLE_WOOD"} ) castInstead woodcutter_jungle
+  - ( variableEquals{var=skill.log_type;value="ACACIA_LOG"} || variableEquals{var=skill.log_type;value="ACACIA_WOOD"} || variableEquals{var=skill.log_type;value="STRIPPED_ACACIA_LOG"} || variableEquals{var=skill.log_type;value="STRIPPED_ACACIA_WOOD"} ) castInstead woodcutter_acacia
+  - ( variableEquals{var=skill.log_type;value="DARK_OAK_LOG"} || variableEquals{var=skill.log_type;value="DARK_OAK_WOOD"} || variableEquals{var=skill.log_type;value="STRIPPED_DARK_OAK_LOG"} || variableEquals{var=skill.log_type;value="STRIPPED_DARK_OAK_WOOD"} ) castInstead woodcutter_dark_oak
+  - ( variableEquals{var=skill.log_type;value="MANGROVE_LOG"} || variableEquals{var=skill.log_type;value="MANGROVE_WOOD"} || variableEquals{var=skill.log_type;value="STRIPPED_MANGROVE_LOG"} || variableEquals{var=skill.log_type;value="STRIPPED_MANGROVE_WOOD"} ) castInstead woodcutter_mangrove
+  - ( variableEquals{var=skill.log_type;value="CHERRY_LOG"} || variableEquals{var=skill.log_type;value="CHERRY_WOOD"} || variableEquals{var=skill.log_type;value="STRIPPED_CHERRY_LOG"} || variableEquals{var=skill.log_type;value="STRIPPED_CHERRY_WOOD"} ) castInstead woodcutter_cherry
+  - ( variableEquals{var=skill.log_type;value="PALE_OAK_LOG"} || variableEquals{var=skill.log_type;value="PALE_OAK_WOOD"} || variableEquals{var=skill.log_type;value="STRIPPED_PALE_OAK_LOG"} || variableEquals{var=skill.log_type;value="STRIPPED_PALE_OAK_WOOD"} ) castInstead woodcutter_pale_oak
+
+  - ( variableEquals{var=skill.log_type;value="CRIMSON_STEM"} || variableEquals{var=skill.log_type;value="CRIMSON_HYPHAE"} || variableEquals{var=skill.log_type;value="STRIPPED_CRIMSON_STEM"} || variableEquals{var=skill.log_type;value="STRIPPED_CRIMSON_HYPHAE"} ) castInstead woodcutter_crimson
+  - ( variableEquals{var=skill.log_type;value="WARPED_STEM"} || variableEquals{var=skill.log_type;value="WARPED_HYPHAE"} || variableEquals{var=skill.log_type;value="STRIPPED_WARPED_STEM"} || variableEquals{var=skill.log_type;value="STRIPPED_WARPED_HYPHAE"} ) castInstead woodcutter_warped
+  
+  - ( variableEquals{var=skill.log_type;value="BAMBOO_BLOCK"} || variableEquals{var=skill.log_type;value="STRIPPED_BAMBOO_BLOCK"} ) castInstead woodcutter_bamboo
+
+woodcutter_oak:
+  Skills:
+  - dropitem{i=oak_planks 8} @SelfLocation{y=-1;centered=true}
+
+woodcutter_spruce:
+  Skills:
+  - dropitem{i=spruce_planks 8} @SelfLocation{y=-1;centered=true}
+
+woodcutter_birch:
+  Skills:
+  - dropitem{i=birch_planks 8} @SelfLocation{y=-1;centered=true}
+
+woodcutter_jungle:
+  Skills:
+  - dropitem{i=jungle_planks 8} @SelfLocation{y=-1;centered=true}
+
+woodcutter_acacia:
+  Skills:
+  - dropitem{i=acacia_planks 8} @SelfLocation{y=-1;centered=true}
+
+woodcutter_dark_oak:
+  Skills:
+  - dropitem{i=dark_oak_planks 8} @SelfLocation{y=-1;centered=true}
+
+woodcutter_mangrove:
+  Skills:
+  - dropitem{i=mangrove_planks 8} @SelfLocation{y=-1;centered=true}
+
+woodcutter_cherry:
+  Skills:
+  - dropitem{i=cherry_planks 8} @SelfLocation{y=-1;centered=true}
+
+woodcutter_crimson:
+  Skills:
+  - dropitem{i=crimson_planks 8} @SelfLocation{y=-1;centered=true}
+
+woodcutter_warped:
+  Skills:
+  - dropitem{i=warped_planks 8} @SelfLocation{y=-1;centered=true}
+
+woodcutter_bamboo:
+  Skills:
+  - dropitem{i=bamboo_planks 8} @SelfLocation{y=-1;centered=true}
+
+woodcutter_pale_oak:
+  Skills:
+  - dropitem{i=pale_oak_planks 8} @SelfLocation{y=-1;centered=true}
