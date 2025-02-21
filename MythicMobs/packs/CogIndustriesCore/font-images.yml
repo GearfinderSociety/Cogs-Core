@@ -1,0 +1,786 @@
+paperwood_gear:
+     Type: bitmap
+     Char: "\u6100"
+     File: item/gearfinder/unicodes/icons/paperwood_gear
+     Ascent: 8.5
+     Height: 9
+
+paperwood_slot:
+     Type: bitmap
+     Char: "\u6101"
+     File: item/gearfinder/unicodes/icons/paperwood_slot
+     Ascent: 8.5
+     Height: 9
+
+paperwood_conveyor:
+     Type: bitmap
+     Char: "\u6102"
+     File: item/gearfinder/unicodes/icons/paperwood_conveyor
+     Ascent: 8.5
+     Height: 9
+
+paperwood_hopper:
+     Type: bitmap
+     Char: "\u6103"
+     File: item/gearfinder/unicodes/icons/paperwood_hopper
+     Ascent: 8.5
+     Height: 9
+
+paperwood_craft:
+     Type: bitmap
+     Char: "\u6104"
+     File: item/gearfinder/unicodes/icons/paperwood_craft
+     Ascent: 8.5
+     Height: 9
+
+paperwood_skull:
+     Type: bitmap
+     Char: "\u6105"
+     File: item/gearfinder/unicodes/icons/paperwood_skull
+     Ascent: 8.5
+     Height: 9
+
+# TOOLS
+
+paperwood_axe:
+     Type: bitmap
+     Char: "\u6106"
+     File: item/gearfinder/unicodes/icons/paperwood_axe
+     Ascent: 8.5
+     Height: 9
+
+paperwood_hoe:
+     Type: bitmap
+     Char: "\u6107"
+     File: item/gearfinder/unicodes/icons/paperwood_hoe
+     Ascent: 8.5
+     Height: 9
+
+paperwood_shovel:
+     Type: bitmap
+     Char: "\u6108"
+     File: item/gearfinder/unicodes/icons/paperwood_shovel
+     Ascent: 8.5
+     Height: 9
+
+paperwood_pickaxe:
+     Type: bitmap
+     Char: "\u6109"
+     File: item/gearfinder/unicodes/icons/paperwood_pickaxe
+     Ascent: 8.5
+     Height: 9
+
+paperwood_sword:
+     Type: bitmap
+     Char: "\u6110"
+     File: item/gearfinder/unicodes/icons/paperwood_sword
+     Ascent: 8.5
+     Height: 9
+
+paperwood_bow:
+     Type: bitmap
+     Char: "\u6111"
+     File: item/gearfinder/unicodes/icons/paperwood_bow
+     Ascent: 8.5
+     Height: 9
+
+paperwood_crossbow:
+     Type: bitmap
+     Char: "\u6112"
+     File: item/gearfinder/unicodes/icons/paperwood_crossbow
+     Ascent: 8.5
+     Height: 9
+
+paperwood_rod:
+     Type: bitmap
+     Char: "\u6113"
+     File: item/gearfinder/unicodes/icons/paperwood_rod
+     Ascent: 8.5
+     Height: 9
+
+paperwood_shield:
+     Type: bitmap
+     Char: "\u6114"
+     File: item/gearfinder/unicodes/icons/paperwood_shield
+     Ascent: 8.5
+     Height: 9
+
+paperwood_hat:
+     Type: bitmap
+     Char: "\u6115"
+     File: item/gearfinder/unicodes/icons/paperwood_hat
+     Ascent: 8.5
+     Height: 9
+
+paperwood_helmet:
+     Type: bitmap
+     Char: "\u6116"
+     File: item/gearfinder/unicodes/icons/paperwood_helmet
+     Ascent: 8.5
+     Height: 9
+
+paperwood_chestplate:
+     Type: bitmap
+     Char: "\u6117"
+     File: item/gearfinder/unicodes/icons/paperwood_chestplate
+     Ascent: 8.5
+     Height: 9
+
+paperwood_legs:
+     Type: bitmap
+     Char: "\u6118"
+     File: item/gearfinder/unicodes/icons/paperwood_legs
+     Ascent: 8.5
+     Height: 9
+
+paperwood_boots:
+     Type: bitmap
+     Char: "\u6119"
+     File: item/gearfinder/unicodes/icons/paperwood_boots
+     Ascent: 8.5
+     Height: 9
+
+# ICONS 2
+
+paperwood_heart:
+     Type: bitmap
+     Char: "\u6120"
+     File: item/gearfinder/unicodes/icons/paperwood_heart
+     Ascent: 8.5
+     Height: 9
+
+paperwood_food:
+     Type: bitmap
+     Char: "\u6121"
+     File: item/gearfinder/unicodes/icons/paperwood_food
+     Ascent: 8.5
+     Height: 9
+
+paperwood_hand:
+     Type: bitmap
+     Char: "\u6122"
+     File: item/gearfinder/unicodes/icons/paperwood_hand
+     Ascent: 8.5
+     Height: 9
+
+paperwood_backpack:
+     Type: bitmap
+     Char: "\u6123"
+     File: item/gearfinder/unicodes/icons/paperwood_backpack
+     Ascent: 8.5
+     Height: 9
+
+paperwood_balloon:
+     Type: bitmap
+     Char: "\u6124"
+     File: item/gearfinder/unicodes/icons/paperwood_balloon
+     Ascent: 8.5
+     Height: 9
+
+paperwood_target:
+     Type: bitmap
+     Char: "\u6125"
+     File: item/gearfinder/unicodes/icons/paperwood_target
+     Ascent: 8.5
+     Height: 9
+
+paperwood_text:
+     Type: bitmap
+     Char: "\u6126"
+     File: item/gearfinder/unicodes/icons/paperwood_text
+     Ascent: 8.5
+     Height: 9
+
+paperwood_question:
+     Type: bitmap
+     Char: "\u6127"
+     File: item/gearfinder/unicodes/icons/paperwood_question
+     Ascent: 8.5
+     Height: 9
+
+paperwood_mark:
+     Type: bitmap
+     Char: "\u6128"
+     File: item/gearfinder/unicodes/icons/paperwood_mark
+     Ascent: 8.5
+     Height: 9
+
+paperwood_arrow_up:
+     Type: bitmap
+     Char: "\u6129"
+     File: item/gearfinder/unicodes/icons/paperwood_arrow_up
+     Ascent: 8.5
+     Height: 9
+
+paperwood_arrow_down:
+     Type: bitmap
+     Char: "\u6130"
+     File: item/gearfinder/unicodes/icons/paperwood_arrow_down
+     Ascent: 8.5
+     Height: 9
+
+paperwood_arrow_left:
+     Type: bitmap
+     Char: "\u6131"
+     File: item/gearfinder/unicodes/icons/paperwood_arrow_left
+     Ascent: 8.5
+     Height: 9
+
+paperwood_arrow_right:
+     Type: bitmap
+     Char: "\u6132"
+     File: item/gearfinder/unicodes/icons/paperwood_arrow_right
+     Ascent: 8.5
+     Height: 9
+
+paperwood_mark_no:
+     Type: bitmap
+     Char: "\u6133"
+     File: item/gearfinder/unicodes/icons/paperwood_mark_no
+     Ascent: 8.5
+     Height: 9
+
+paperwood_mark_yes:
+     Type: bitmap
+     Char: "\u6134"
+     File: item/gearfinder/unicodes/icons/paperwood_mark_yes
+     Ascent: 8.5
+     Height: 9
+
+paperwood_pet:
+     Type: bitmap
+     Char: "\u6135"
+     File: item/gearfinder/unicodes/icons/paperwood_pet
+     Ascent: 8.5
+     Height: 9
+
+paperwood_rails:
+     Type: bitmap
+     Char: "\u6136"
+     File: item/gearfinder/unicodes/icons/paperwood_rails
+     Ascent: 8.5
+     Height: 9
+
+paperwood_ingot:
+     Type: bitmap
+     Char: "\u6137"
+     File: item/gearfinder/unicodes/icons/paperwood_ingot
+     Ascent: 8.5
+     Height: 9
+
+# NINJAGO
+
+paperwood_katana:
+     Type: bitmap
+     Char: "\u6138"
+     File: item/gearfinder/unicodes/icons/paperwood_katana
+     Ascent: 8.5
+     Height: 9
+
+paperwood_shuriken:
+     Type: bitmap
+     Char: "\u6139"
+     File: item/gearfinder/unicodes/icons/paperwood_shuriken
+     Ascent: 8.5
+     Height: 9
+
+paperwood_hammer:
+     Type: bitmap
+     Char: "\u6140"
+     File: item/gearfinder/unicodes/icons/paperwood_hammer
+     Ascent: 8.5
+     Height: 9
+
+paperwood_nunchaku:
+     Type: bitmap
+     Char: "\u6141"
+     File: item/gearfinder/unicodes/icons/paperwood_nunchaku
+     Ascent: 8.5
+     Height: 9
+
+# OTHER
+
+paperwood_piston:
+     Type: bitmap
+     Char: "\u6142"
+     File: item/gearfinder/unicodes/icons/paperwood_piston
+     Ascent: 8.5
+     Height: 9
+
+paperwood_tree:
+     Type: bitmap
+     Char: "\u6143"
+     File: item/gearfinder/unicodes/icons/paperwood_tree
+     Ascent: 8.5
+     Height: 9
+
+paperwood_potion:
+     Type: bitmap
+     Char: "\u6144"
+     File: item/gearfinder/unicodes/icons/paperwood_potion
+     Ascent: 8.5
+     Height: 9
+
+paperwood_anvil:
+     Type: bitmap
+     Char: "\u6145"
+     File: item/gearfinder/unicodes/icons/paperwood_anvil
+     Ascent: 8.5
+     Height: 9
+
+paperwood_crop:
+     Type: bitmap
+     Char: "\u6146"
+     File: item/gearfinder/unicodes/icons/paperwood_crop
+     Ascent: 8.5
+     Height: 9
+
+paperwood_cutter:
+     Type: bitmap
+     Char: "\u6147"
+     File: item/gearfinder/unicodes/icons/paperwood_cutter
+     Ascent: 8.5
+     Height: 9
+
+# BIG
+
+paperwood_gear_big:
+     Type: bitmap
+     Char: "\u6200"
+     File: item/gearfinder/unicodes/icons/paperwood_gear
+     Ascent: 11
+     Height: 24
+
+paperwood_conveyor_big:
+     Type: bitmap
+     Char: "\u6202"
+     File: item/gearfinder/unicodes/icons/paperwood_conveyor
+     Ascent: 11
+     Height: 24
+
+paperwood_hopper_big:
+     Type: bitmap
+     Char: "\u6203"
+     File: item/gearfinder/unicodes/icons/paperwood_hopper
+     Ascent: 11
+     Height: 24
+
+paperwood_craft_big:
+     Type: bitmap
+     Char: "\u6204"
+     File: item/gearfinder/unicodes/icons/paperwood_craft
+     Ascent: 11
+     Height: 24
+
+paperwood_axe_big:
+     Type: bitmap
+     Char: "\u6206"
+     File: item/gearfinder/unicodes/icons/paperwood_axe
+     Ascent: 11
+     Height: 24
+
+paperwood_hoe_big:
+     Type: bitmap
+     Char: "\u6207"
+     File: item/gearfinder/unicodes/icons/paperwood_hoe
+     Ascent: 11
+     Height: 24
+
+paperwood_shovel_big:
+     Type: bitmap
+     Char: "\u6208"
+     File: item/gearfinder/unicodes/icons/paperwood_shovel
+     Ascent: 11
+     Height: 24
+
+paperwood_pickaxe_big:
+     Type: bitmap
+     Char: "\u6209"
+     File: item/gearfinder/unicodes/icons/paperwood_pickaxe
+     Ascent: 11
+     Height: 24
+
+paperwood_sword_big:
+     Type: bitmap
+     Char: "\u6210"
+     File: item/gearfinder/unicodes/icons/paperwood_sword
+     Ascent: 11
+     Height: 24
+
+paperwood_rod_big:
+     Type: bitmap
+     Char: "\u6213"
+     File: item/gearfinder/unicodes/icons/paperwood_rod
+     Ascent: 11
+     Height: 24
+
+paperwood_food_big:
+     Type: bitmap
+     Char: "\u6221"
+     File: item/gearfinder/unicodes/icons/paperwood_food
+     Ascent: 11
+     Height: 24
+
+paperwood_ingot_big:
+     Type: bitmap
+     Char: "\u6237"
+     File: item/gearfinder/unicodes/icons/paperwood_ingot
+     Ascent: 11
+     Height: 24
+
+paperwood_piston_big:
+     Type: bitmap
+     Char: "\u6242"
+     File: item/gearfinder/unicodes/icons/paperwood_piston
+     Ascent: 11
+     Height: 24
+
+health_bar_center:
+     Type: bitmap
+     Char: "\u6300"
+     File: item/gearfinder/unicodes/health_bar/center_1
+     Ascent: 3.5
+     Height: 18
+
+health_bar_middle_full:
+     Type: bitmap
+     Char: "\u6301"
+     File: item/gearfinder/unicodes/health_bar/middle_full_1
+     Ascent: 3.5
+     Height: 18
+
+health_bar_middle_empty:
+     Type: bitmap
+     Char: "\u6302"
+     File: item/gearfinder/unicodes/health_bar/middle_empty_1
+     Ascent: 3.5
+     Height: 18
+
+health_bar_corner_full_1:
+     Type: bitmap
+     Char: "\u6303"
+     File: item/gearfinder/unicodes/health_bar/corner_full_1
+     Ascent: 3.5
+     Height: 18
+
+health_bar_corner_full_2:
+     Type: bitmap
+     Char: "\u6304"
+     File: item/gearfinder/unicodes/health_bar/corner_full_2
+     Ascent: 3.5
+     Height: 18
+
+health_bar_corner_empty_1:
+     Type: bitmap
+     Char: "\u6305"
+     File: item/gearfinder/unicodes/health_bar/corner_empty_1
+     Ascent: 3.5
+     Height: 18
+
+health_bar_corner_empty_2:
+     Type: bitmap
+     Char: "\u6306"
+     File: item/gearfinder/unicodes/health_bar/corner_empty_2
+     Ascent: 3.5
+     Height: 18
+
+
+
+# NEGATIVE SPACE
+
+shift_1:
+     Type: bitmap
+     Char: "\u6500"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: -1
+
+shift_2:
+     Type: bitmap
+     Char: "\u6501"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: 0
+
+shift_4:
+     Type: bitmap
+     Char: "\u6502"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: 2
+
+shift_8:
+     Type: bitmap
+     Char: "\u6503"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: 6
+
+shift_16:
+     Type: bitmap
+     Char: "\u6504"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: 14
+
+shift_32:
+     Type: bitmap
+     Char: "\u6505"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: 30
+
+shift_64:
+     Type: bitmap
+     Char: "\u6506"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: 62
+
+shift_128:
+     Type: bitmap
+     Char: "\u6507"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: 126
+
+shift_256:
+     Type: bitmap
+     Char: "\u6508"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: 254
+
+shift_512:
+     Type: bitmap
+     Char: "\u6509"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: 510
+
+shift_1024:
+     Type: bitmap
+     Char: "\u6510"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: 1022
+
+neg_shift_1:
+     Type: bitmap
+     Char: "\u6511"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: -3
+
+neg_shift_2:
+     Type: bitmap
+     Char: "\u6512"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: -4
+
+neg_shift_4:
+     Type: bitmap
+     Char: "\u6513"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: -6
+
+neg_shift_8:
+     Type: bitmap
+     Char: "\u6514"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: -10
+
+neg_shift_16:
+     Type: bitmap
+     Char: "\u6515"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: -18
+
+neg_shift_32:
+     Type: bitmap
+     Char: "\u6516"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: -34
+
+neg_shift_64:
+     Type: bitmap
+     Char: "\u6517"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: -66
+
+neg_shift_128:
+     Type: bitmap
+     Char: "\u6518"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: -130
+
+neg_shift_256:
+     Type: bitmap
+     Char: "\u6519"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: -258
+
+neg_shift_512:
+     Type: bitmap
+     Char: "\u6520"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: -514
+
+neg_shift_1024:
+     Type: bitmap
+     Char: "\u6521"
+     File: item/gearfinder/unicodes/null
+     Ascent: -32768
+     Height: -1026
+
+gear_logo_big_1:
+     Type: bitmap
+     Char: "\u6600"
+     File: item/gearfinder/unicodes/logos/new_part_1
+     Ascent: 32
+     Height: 64
+gear_logo_big_2:
+     Type: bitmap
+     Char: "\u6601"
+     File: item/gearfinder/unicodes/logos/new_part_2
+     Ascent: 32
+     Height: 64
+gear_logo_big_3:
+     Type: bitmap
+     Char: "\u6602"
+     File: item/gearfinder/unicodes/logos/new_part_3
+     Ascent: 32
+     Height: 64
+gear_logo_big_4:
+     Type: bitmap
+     Char: "\u6603"
+     File: item/gearfinder/unicodes/logos/new_part_4
+     Ascent: 32
+     Height: 64
+
+gear_logo_1:
+     Type: bitmap
+     Char: "\u6604"
+     File: item/gearfinder/unicodes/logos/new_part_1
+     Ascent: 32
+     Height: 34
+gear_logo_2:
+     Type: bitmap
+     Char: "\u6605"
+     File: item/gearfinder/unicodes/logos/new_part_2
+     Ascent: 32
+     Height: 34
+gear_logo_3:
+     Type: bitmap
+     Char: "\u6606"
+     File: item/gearfinder/unicodes/logos/new_part_3
+     Ascent: 32
+     Height: 34
+gear_logo_4:
+     Type: bitmap
+     Char: "\u6607"
+     File: item/gearfinder/unicodes/logos/new_part_4
+     Ascent: 32
+     Height: 34
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gear_interface_cosmetics:
+     Type: bitmap
+     Char: "\u6800"
+     File: item/gearfinder/unicodes/interfaces/menu_cosmetics
+     Ascent: 18
+     Height: 256
+
+gear_interface_warps:
+     Type: bitmap
+     Char: "\u6801"
+     File: item/gearfinder/unicodes/interfaces/menu_warps
+     Ascent: 18
+     Height: 256
+
+gear_interface_warps_category:
+     Type: bitmap
+     Char: "\u6802"
+     File: item/gearfinder/unicodes/interfaces/menu_warps_category
+     Ascent: 18
+     Height: 256
+
+gear_interface_skills:
+     Type: bitmap
+     Char: "\u6803"
+     File: item/gearfinder/unicodes/interfaces/menu_skills
+     Ascent: 18
+     Height: 256
+
+gear_interface_skills_progress:
+     Type: bitmap
+     Char: "\u6804"
+     File: item/gearfinder/unicodes/interfaces/menu_skills_progress
+     Ascent: 18
+     Height: 256
+
+gear_interface_skills_stats:
+     Type: bitmap
+     Char: "\u6805"
+     File: item/gearfinder/unicodes/interfaces/menu_skills_stats
+     Ascent: 18
+     Height: 256
+
+gear_interface_skills_mmo:
+     Type: bitmap
+     Char: "\u6806"
+     File: item/gearfinder/unicodes/interfaces/menu_skills_mmo
+     Ascent: 18
+     Height: 256
+
+gear_interface_frontier:
+     Type: bitmap
+     Char: "\u6807"
+     File: item/gearfinder/unicodes/interfaces/menu_frontier
+     Ascent: 18
+     Height: 256

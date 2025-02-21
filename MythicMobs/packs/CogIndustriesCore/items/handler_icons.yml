@@ -1,0 +1,195 @@
+paperwood_gear:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_gear
+
+paperwood_slot:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_slot
+
+paperwood_conveyor:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_conveyor
+
+paperwood_hopper:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_hopper
+
+paperwood_craft:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_craft
+
+paperwood_skull:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_skull
+
+paperwood_axe:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_axe
+
+paperwood_hoe:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_hoe
+
+paperwood_shovel:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_shovel
+
+paperwood_pickaxe:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_pickaxe
+
+paperwood_sword:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_sword
+
+paperwood_bow:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_bow
+
+paperwood_crossbow:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_crossbow
+
+paperwood_rod:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_rod
+
+paperwood_shield:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_shield
+
+paperwood_hat:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_hat
+
+paperwood_helmet:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_helmet
+
+paperwood_chestplate:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_chestplate
+
+paperwood_legs:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_legs
+
+paperwood_boots:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_boots
+
+paperwood_heart:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_heart
+
+paperwood_food:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_food
+
+paperwood_hand:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_hand
+
+paperwood_backpack:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_backpack
+
+paperwood_balloon:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_balloon
+
+paperwood_target:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_target
+
+paperwood_text:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_text
+
+paperwood_question:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_question
+
+paperwood_mark:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_mark
+
+paperwood_arrow_up:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_arrow_up
+
+paperwood_arrow_down:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_arrow_down
+
+paperwood_arrow_left:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_arrow_left
+
+paperwood_arrow_right:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_arrow_right
+
+paperwood_mark_no:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_mark_no
+
+paperwood_mark_yes:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_mark_yes
+
+paperwood_pet:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_pet
+
+paperwood_rails:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_rails
+
+paperwood_katana:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_katana
+
+paperwood_shuriken:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_shuriken
+
+paperwood_hammer:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_hammer
+
+paperwood_nunchaku:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_nunchaku
+
+paperwood_piston:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_piston
+
+paperwood_tree:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_tree
+
+paperwood_ingot:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_ingot
+
+paperwood_potion:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_potion
+
+paperwood_anvil:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_anvil
+
+paperwood_crop:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_crop
+
+paperwood_cutter:
+  Id: PAPER
+  Model: gearfinder/unicodes/icons/paperwood_cutter
+
+empty:
+  Id: PAPER
+  Model: gearfinder/unicodes/empty

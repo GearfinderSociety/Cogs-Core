@@ -1,0 +1,63 @@
+#============================================================================#
+# CONVEYORS AND TRANSPORTATION
+#============================================================================#
+
+handler_conveyor:
+  Id: STICK
+  Model: gearfinder/machinery/conveyor
+
+handler_conveyor_up:
+  Id: STICK
+  Model: gearfinder/machinery/conveyor_up
+  
+handler_conveyor_down:
+  Id: STICK
+  Model: gearfinder/machinery/conveyor_down
+
+#============================================================================#
+# FARMING AND HARVESTING
+#============================================================================#
+
+handler_harvester:
+  Id: STICK
+  Model: gearfinder/machinery/harvester
+
+handler_composter_empty:
+  Id: STICK
+  Model: gearfinder/machinery/composter
+
+handler_composter_full:
+  Id: STICK
+  Model: gearfinder/machinery/composter_full
+
+#============================================================================#
+# CANNONS, DEFENSE, TURRETS
+#============================================================================#
+
+handler_tower_cannon:
+  Id: STICK
+  Model: gearfinder/machinery/tower_cannon
+
+#============================================================================#
+# MACHINERY AND PRODUCTION
+#============================================================================#
+
+handler_machine_base:
+  Id: STICK
+  Model: gearfinder/machinery/base_machine
+  
+handler_machine_crafter:
+  Id: STICK
+  Model: gearfinder/machinery/base_crafter
+
+#============================================================================#
+# PROCESSING MACHINES
+#============================================================================#
+
+handler_woodcutter:
+  Id: STICK
+  Model: gearfinder/machinery/woodcutter
+
+handler_gear_anvil:
+  Id: STICK
+  Model: gearfinder/machinery/gear_anvil

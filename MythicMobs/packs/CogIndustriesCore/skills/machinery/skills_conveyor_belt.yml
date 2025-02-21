@@ -1,0 +1,212 @@
+#######################################################################################
+#                                                                                     #
+#   CONVEYOR - HANDLER SYSTEM                                                         #
+#                                                                                     #
+#######################################################################################
+
+skill_conveyor_belt-visual_brown:
+  TargetConditions:
+  - blocktype{t=air} true
+  Skills:
+  - effect:particles{p=reddust;color=#735656;amount=4}
+
+skill_conveyor_belt-visual_paper:
+  TargetConditions:
+  - blocktype{t=air} true
+  Skills:
+  - effect:particles{p=reddust;color=#D9C69C;amount=4}
+
+skill_conveyor_belt-base:
+  Skills:
+  # VISUAL
+  - skill{s=skill_conveyor_belt-visual_brown} @SelfLocation{y=1.5}
+  - skill{s=skill_conveyor_belt-visual_paper} @SelfLocation{y=1.5}
+
+  # ITEMS AND DROPS
+  - skill{s=conveyor_base-item_move} @SelfLocation{foffset=1;y=1}
+
+  # ENTITIES
+  - skill{s=conveyor_base-unit_move} @SelfLocation{foffset=1;y=1}
+
+skill_conveyor_belt-up:
+  Skills:
+  # VISUAL
+  - skill{s=skill_conveyor_belt-visual_paper} @SelfLocation{fo=-1;y=0.5}
+  - skill{s=skill_conveyor_belt-visual_paper} @SelfLocation{y=1.5}
+
+  # ITEMS AND DROPS
+  - skill{s=conveyor_up-item_move}    @SelfLocation{fo=-1}
+  - skill{s=conveyor_up-item_launch}  @SelfLocation{y=1}
+  - skill{s=conveyor_up-item_forward} @SelfLocation{y=1}
+
+  # ENTITIES 
+  - skill{s=conveyor_up-unit_move}    @SelfLocation{fo=-1}
+  - skill{s=conveyor_up-unit_launch}  @SelfLocation{y=1}
+  - skill{s=conveyor_up-unit_forward} @SelfLocation{y=1}
+
+skill_conveyor_belt-down:
+  Skills:
+  # VISUAL
+  - skill{s=skill_conveyor_belt-visual_brown} @SelfLocation{fo=1;y=0.5}
+  - skill{s=skill_conveyor_belt-visual_brown} @SelfLocation{y=1.5}
+  
+  # ITEMS AND DROPS
+  - skill{s=conveyor_down-item_move}    @SelfLocation{y=1}
+  - skill{s=conveyor_down-item_forward} @SelfLocation{foffset=1;y=-0.5}
+
+  # ENTITIES
+  - skill{s=conveyor_down-unit_move}    @SelfLocation{y=1}
+  - skill{s=conveyor_down-unit_forward} @SelfLocation{foffset=1;y=-0.5}
+
+
+
+#######################################################################################
+#                                                                                     #
+#   CONVEYOR - BASE SYSTEM                                                            #
+#                                                                                     #
+#######################################################################################
+
+# ITEM
+
+conveyor_base-item_move:
+  TargetConditions:
+  - (isfurniture false) || (isfurniture true && furnitureType{t=machinery-conveyor_belt-up} false)
+  Skills:
+  - sudoskill{s=[
+      - Aura{auraName=conveyor_moving;duration=200;mergesamecaster=false} @Self
+      - lunge{velocity=0.2} @TriggerLocation{foffset=1}
+    ];cat=true} @INO{r=0.7}
+    
+# UNIT
+
+conveyor_base-unit_move:
+  TargetConditions:
+  - (isfurniture false) || (isfurniture true && furnitureType{t=machinery-conveyor_belt-up} false)
+  Skills:
+  - sudoskill{s=[
+      - skill{s=CONVEYOR_GENERAL-UNIT-SAFE_FALL}
+      - lunge{velocity=0.2} @TriggerLocation{foffset=1} ?!crouching ?!faction{faction=gearworks_unit} ?!faction{faction=gearworks_pet} ?!faction{faction=gearworks_machine} ?!faction{faction=gearworks_conveyor}
+    ];cat=true} @ENO{r=0.7}
+
+#######################################################################################
+#                                                                                     #
+#   CONVEYOR - UP SYSTEM                                                              #
+#                                                                                     #
+#######################################################################################
+
+# ITEM
+
+conveyor_up-item_move:
+  TargetConditions:
+  - blocktype{t=air} true
+  Skills:
+  - sudoskill{s=[
+      - Aura{auraName=conveyor_moving;duration=200;mergesamecaster=false} @Self
+      - propel{v=0.2} @Origin{y=1;fo=1}
+    ];cat=true;origin=@SelfLocation{fo=-1}} @ItemsNearOrigin{r=0.8}
+
+conveyor_up-item_launch:
+  TargetConditions:
+  - blocktype{t=air} true
+  Skills:
+  - sudoskill{s=[
+      - propel{v=0.2} @Origin{y=1.5;fo=1}
+    ];cat=true;origin=@SelfLocation{y=1;fo=-1}} @ItemsNearOrigin{r=1}
+
+conveyor_up-item_forward:
+  TargetConditions:
+  - blocktype{t=air} true
+  Skills:
+  - sudoskill{s=[
+      - lunge{velocity=0.1} @Origin{fo=1}
+    ];cat=true;origin=@SelfLocation{y=1.5}} @ItemsNearOrigin{r=0.8}
+
+# UNIT
+
+conveyor_up-unit_move:
+  TargetConditions:
+  - blocktype{t=air} true
+  Skills:
+  - sudoskill{s=[
+      - skill{s=CONVEYOR_GENERAL-UNIT-SAFE_FALL}
+      - propel{v=0.2} @Origin{y=1;fo=1} ?!crouching ?!faction{faction=gearworks_unit} ?!faction{faction=gearworks_pet} ?!faction{faction=gearworks_machine} ?!faction{faction=gearworks_conveyor}
+    ];cat=true;origin=@SelfLocation{fo=-1}} @ENO{r=0.8}
+
+conveyor_up-unit_launch:
+  TargetConditions:
+  - blocktype{t=air} true
+  Skills:
+  - sudoskill{s=[
+      - skill{s=CONVEYOR_GENERAL-UNIT-SAFE_FALL}
+      - propel{v=0.2} @Origin{y=1.5;fo=1} ?!crouching ?!faction{faction=gearworks_unit} ?!faction{faction=gearworks_pet} ?!faction{faction=gearworks_machine} ?!faction{faction=gearworks_conveyor}
+    ];cat=true;origin=@SelfLocation{y=1;fo=-1}} @ENO{r=1}
+
+conveyor_up-unit_forward:
+  TargetConditions:
+  - blocktype{t=air} true
+  Skills:
+  - sudoskill{s=[
+      - skill{s=CONVEYOR_GENERAL-UNIT-SAFE_FALL}
+      - lunge{velocity=0.1} @Origin{fo=1} ?!crouching ?!faction{faction=gearworks_unit} ?!faction{faction=gearworks_pet} ?!faction{faction=gearworks_machine} ?!faction{faction=gearworks_conveyor}
+    ];cat=true;origin=@SelfLocation{y=1.5}} @ENO{r=0.8}
+
+
+
+#######################################################################################
+#                                                                                     #
+#   CONVEYOR - DOWN SYSTEM                                                            #
+#                                                                                     #
+#######################################################################################
+
+# ITEM
+
+conveyor_down-item_move:
+  TargetConditions:
+  - blocktype{t=air} true
+  Skills:
+  - sudoskill{s=[
+      - Aura{auraName=conveyor_moving;duration=200;mergesamecaster=false} @Self
+      - lunge{velocity=0.1} @Origin{foffset=1}
+    ];cat=true;origin=@SelfLocation{y=1}} @ItemsNearOrigin{r=1} 
+
+conveyor_down-item_forward:
+  TargetConditions:
+  - (isfurniture false) || (isfurniture true && furnitureType{t=machinery-conveyor_belt} false)
+  Skills:
+  - sudoskill{s=[
+      - propel{v=0.2} @Origin{y=-1.5;fo=-1}
+    ];cat=true;origin=@SelfLocation{y=0;foffset=1}} @ItemsNearOrigin{r=0.8}
+
+# UNIT
+
+conveyor_down-unit_move:
+  TargetConditions:
+  - blocktype{t=air} true
+  Skills:
+  - sudoskill{s=[
+      - skill{s=CONVEYOR_GENERAL-UNIT-SAFE_FALL}
+      - lunge{velocity=0.1} @Origin{foffset=1} ?!crouching ?!faction{faction=gearworks_unit} ?!faction{faction=gearworks_pet} ?!faction{faction=gearworks_machine} ?!faction{faction=gearworks_conveyor}
+    ];cat=true;origin=@SelfLocation{y=1}} @ENO{r=1} 
+
+conveyor_down-unit_forward:
+  TargetConditions:
+  - (isfurniture false) || (isfurniture true && furnitureType{t=machinery-conveyor_belt} false)
+  Skills:
+  - sudoskill{s=[
+      - skill{s=CONVEYOR_GENERAL-UNIT-SAFE_FALL}
+      - propel{v=0.2} @Origin{y=-1.5;fo=-1} ?!crouching ?!faction{faction=gearworks_unit} ?!faction{faction=gearworks_pet} ?!faction{faction=gearworks_machine} ?!faction{faction=gearworks_conveyor}
+    ];cat=true;origin=@SelfLocation{y=0;foffset=1}} @ENO{r=0.9}
+
+
+
+#######################################################################################
+#                                                                                     #
+#   CONVEYOR - SAFE FALL                                                              #
+#                                                                                     #
+#######################################################################################
+
+# UNIT
+
+CONVEYOR_GENERAL-UNIT-SAFE_FALL:
+  Skills:
+  #- onDamaged{auraName=safe_fall;d=20;damageMods="FALL 0"} @Self

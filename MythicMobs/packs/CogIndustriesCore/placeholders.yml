@@ -1,0 +1,67 @@
+gear_prefix: "<#735656>[<#D9C69C>GearMachinery<#735656>] <bold>» <reset><#D9C69C>"
+
+machine_harvester_on:  "<#D9C69C>Harvester - Turning on..."
+machine_harvester_off: "<#D9C69C>Harvester - Turning off..."
+
+machine_composter_on:  "<#D9C69C>Composter - Turning on..."
+machine_composter_off: "<#D9C69C>Composter - Turning off..."
+
+gear_tier_0: '<white>攅攒<white>愀 <#D9C69C>Tɪᴇʀ <#735656><bold>» <reset><white>愁 愁 愁 愁 愁 <#735656><bold>| <reset><#D9C69C>Sᴄʀᴀᴘ'
+gear_tier_1: '<white>攅攒<white>愀 <#D9C69C>Tɪᴇʀ <#735656><bold>» <reset><white>愀 愁 愁 愁 愁 <#735656><bold>| <reset><#D9C69C>Cᴏᴍᴍᴏɴ'
+gear_tier_2: '<white>攅攒<white>愀 <#D9C69C>Tɪᴇʀ <#735656><bold>» <reset><white>愀 愀 愁 愁 愁 <#735656><bold>| <reset><#D9C69C>Rᴇᴄʟᴀɪᴍᴇᴅ'
+gear_tier_3: '<white>攅攒<white>愀 <#D9C69C>Tɪᴇʀ <#735656><bold>» <reset><white>愀 愀 愀 愁 愁 <#735656><bold>| <reset><#D9C69C>Pᴏʟɪѕʜᴇᴅ'
+gear_tier_4: '<white>攅攒<white>愀 <#D9C69C>Tɪᴇʀ <#735656><bold>» <reset><white>愀 愀 愀 愀 愁 <#735656><bold>| <reset><#D9C69C>Rᴇꜰɪɴᴇᴅ'
+gear_tier_5: '<white>攅攒<white>愀 <#D9C69C>Tɪᴇʀ <#735656><bold>» <reset><white>愀 愀 愀 愀 愀 <#735656><bold>| <reset><#D9C69C>Mᴀѕᴛᴇʀᴘɪᴇᴄᴇ'
+
+gear_tech_none:           '<white>愀 <#D9C69C>Tᴇᴄʜɴᴏʟᴏɢʏ <#735656><bold>» <reset><#D9C69C>Nᴏɴᴇ'
+gear_tech_basic:          '<white>愀 <#D9C69C>Tᴇᴄʜɴᴏʟᴏɢʏ <#735656><bold>» <reset><#D9C69C>Bᴀѕɪᴄ'
+gear_tech_manual:         '<white>愀 <#D9C69C>Tᴇᴄʜɴᴏʟᴏɢʏ <#735656><bold>» <reset><#D9C69C>Mᴀɴᴜᴀʟ'
+gear_tech_pre_industrial: '<white>愀 <#D9C69C>Tᴇᴄʜɴᴏʟᴏɢʏ <#735656><bold>» <reset><#D9C69C>Pʀᴇ-Iɴᴅᴜѕᴛʀɪᴀʟ'
+gear_tech_industrial:     '<white>愀 <#D9C69C>Tᴇᴄʜɴᴏʟᴏɢʏ <#735656><bold>» <reset><#D9C69C>Iɴᴅᴜѕᴛʀɪᴀʟ'
+gear_tech_steam:          '<white>愀 <#D9C69C>Tᴇᴄʜɴᴏʟᴏɢʏ <#735656><bold>» <reset><#D9C69C>Sᴛᴇᴀᴍ Pᴏᴡᴇʀᴇᴅ'
+gear_tech_gears:          '<white>愀 <#D9C69C>Tᴇᴄʜɴᴏʟᴏɢʏ <#735656><bold>» <reset><#D9C69C>Gᴇᴀʀ Pᴏᴡᴇʀᴇᴅ'
+gear_tech_mechanical:     '<white>愀 <#D9C69C>Tᴇᴄʜɴᴏʟᴏɢʏ <#735656><bold>» <reset><#D9C69C>Mᴇᴄʜᴀɴɪᴄᴀʟ'
+gear_tech_automation:     '<white>愀 <#D9C69C>Tᴇᴄʜɴᴏʟᴏɢʏ <#735656><bold>» <reset><#D9C69C>Aᴜᴛᴏᴍᴀᴛɪᴏɴ'
+
+logo_tool_axe:       "<white>成 <white>愐 <#D9C69C>Tʏᴘᴇ <#735656><bold>» <reset><#D9C69C>Tᴏᴏʟ <#735656><bold>| <reset><#D9C69C>Sᴡᴏʀᴅ"
+logo_tool_hoe:       "<white>戆 <white>愆 <#D9C69C>Tʏᴘᴇ <#735656><bold>» <reset><#D9C69C>Tᴏᴏʟ <#735656><bold>| <reset><#D9C69C>Axᴇ"
+logo_tool_shovel:    "<white>戇 <white>愇 <#D9C69C>Tʏᴘᴇ <#735656><bold>» <reset><#D9C69C>Tᴏᴏʟ <#735656><bold>| <reset><#D9C69C>Hᴏᴇ"
+logo_tool_pickaxe:   "<white>戈 <white>愈 <#D9C69C>Tʏᴘᴇ <#735656><bold>» <reset><#D9C69C>Tᴏᴏʟ <#735656><bold>| <reset><#D9C69C>Sʜᴏᴠᴇʟ"
+logo_tool_sword:     "<white>戉 <white>愉 <#D9C69C>Tʏᴘᴇ <#735656><bold>» <reset><#D9C69C>Tᴏᴏʟ <#735656><bold>| <reset><#D9C69C>Pɪᴄᴋᴀxᴇ"
+logo_material:       "<white>戄 <white>愄 <#D9C69C>Tʏᴘᴇ <#735656><bold>» <reset><#D9C69C>Mᴀᴛᴇʀɪᴀʟ" # Craft
+logo_material_fuel:  "<white>户 <white>愷 <#D9C69C>Tʏᴘᴇ <#735656><bold>» <reset><#D9C69C>Mᴀᴛᴇʀɪᴀʟ <#735656><bold>| <reset><#D9C69C>Fᴜᴇʟ"  # Fuel
+logo_material_metal: "<white>户 <white>愷 <#D9C69C>Tʏᴘᴇ <#735656><bold>» <reset><#D9C69C>Mᴀᴛᴇʀɪᴀʟ <#735656><bold>| <reset><#D9C69C>Mᴇᴛᴀʟ" # Ingot / Metal
+logo_food:           "<white>戡 <white>愡 <#D9C69C>Tʏᴘᴇ <#735656><bold>» <reset><#D9C69C>Fᴏᴏᴅ Iᴛᴇᴍ"
+logo_machine:        "<white>戀 愀 <#D9C69C>Tʏᴘᴇ <#735656><bold>» <reset><#D9C69C>Gᴇᴀʀᴡᴏʀᴋѕ Mᴀᴄʜɪɴᴇ"
+logo_generator:      "<white>户 愷 <#D9C69C>Tʏᴘᴇ <#735656><bold>» <reset><#D9C69C>Gᴇᴀʀᴡᴏʀᴋѕ Gᴇɴᴇʀᴀᴛᴏʀ"
+
+
+
+
+
+
+
+
+lore_divider:     '<#735656><strikethrough>                                                          <white>'
+lore_tier_div:    '<white>攅攒'
+lore_item_div:    '<white>愄 <#D9C69C>Iᴛᴇᴍ Pʀᴏᴘᴇʀᴛɪᴇѕ'
+lore_food_div:    '<white>愡 <#D9C69C>Fᴏᴏᴅ Eꜰꜰᴇᴄᴛ'
+lore_machine_div: '<white>愄 <#D9C69C>Mᴀᴄʜɪɴᴇ Pʀᴏᴘᴇʀᴛɪᴇѕ'
+
+
+
+
+
+
+civilian_talk:
+- "<#D9C69C>Hello there! How are you?"
+- "<#D9C69C>A fine day in this city, don't you think?"
+- "<#D9C69C>Oh hey! Have an amazing day!"
+- "<#D9C69C>Looking for something?"
+- "<#D9C69C>The mine is a great place to earn money!"
+- "<#D9C69C>The farm is a great place to earn food!"
+- "<#D9C69C>Looking for a job? Check the Governor!"
+- "<#D9C69C>We built this place!"
+- "<#D9C69C>Ah! A new Explorer!"
+- "<#D9C69C>I've heard of a new land... Snowfallen?"
+- "<#D9C69C>Mines and farms are great places to work!"

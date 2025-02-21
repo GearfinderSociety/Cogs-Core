@@ -1,0 +1,44 @@
+GEAR_MATERIAL:
+    Lines:
+    - '<placeholder.lore_divider>'
+    - '<white><lore.Type>'
+    - '<white><lore.Tier>'
+    - '<placeholder.lore_divider>'
+    - '<white><lore.Tech>'
+    - '<white><lore.item_effect_0>'
+    - '<white><lore.item_effect_1>'
+    - '<white><lore.item_effect_2>'
+    - '<white><lore.item_effect_3>'
+    - '<white><lore.item_effect_4>'
+    - '<white><lore.item_effect_5>'
+    - '<placeholder.lore_divider>'
+
+GEAR_FOOD:
+    Lines:
+    - '<placeholder.lore_divider>'
+    - '<white><lore.Type>'
+    - '<white><lore.Tier>'
+    - '<placeholder.lore_divider>'
+    - '<white><lore.Tech>'
+    - '<white><lore.food_effect_0>'
+    - '<white><lore.food_effect_1>'
+    - '<white><lore.food_effect_2>'
+    - '<white><lore.food_effect_3>'
+    - '<white><lore.food_effect_4>'
+    - '<white><lore.food_effect_5>'
+    - '<placeholder.lore_divider>'
+
+GEAR_MACHINE:
+    Lines:
+    - '<placeholder.lore_divider>'
+    - '<white><lore.Type>'
+    - '<white><lore.Tier>'
+    - '<placeholder.lore_divider>'
+    - '<white><lore.Tech>'
+    - '<white><lore.item_effect_0>'
+    - '<white><lore.item_effect_1>'
+    - '<white><lore.item_effect_2>'
+    - '<white><lore.item_effect_3>'
+    - '<white><lore.item_effect_4>'
+    - '<white><lore.item_effect_5>'
+    - '<placeholder.lore_divider>'
