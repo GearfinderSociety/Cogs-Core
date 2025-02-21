@@ -1,0 +1,80 @@
+machinery-harvester:
+  ItemUpdater:
+    Version: 1
+    PreserveStatRatio: true
+  Display: "<#735656>[<#D9C69C>Mᴀᴄʜɪɴᴇ<#735656>] <bold>» <reset><#D9C69C>Hᴀʀᴠᴇѕᴛᴇʀ"
+  Lore: 
+    Template: GEAR_MACHINE
+    Type: <placeholder.logo_machine>
+    Tier: <placeholder.gear_tier_1>
+    Tech: <placeholder.gear_tech_mechanical>
+    item_effect_0: <placeholder.lore_machine_div>
+    item_effect_1: "<#735656>└ <white>愀 <gray>Rᴀɴɢᴇ <#735656><bold>» <reset><#735656>(<gray>12 ʙʟᴏᴄᴋѕ<#735656>)"
+    item_effect_2: "<#735656>└ <white>愀 <gray>Hᴀʀᴠᴇѕᴛѕ <#735656><bold>» <reset><#735656>(<gray>ᴄʀᴏᴘѕ<#735656>)"
+    item_effect_3: "<#735656>└ <white>愠 <gray>Dᴜʀᴀʙɪʟɪᴛʏ Pᴏɪɴᴛѕ <#735656><bold>» <reset><#735656>(<gray>5<#735656>)"
+  Id: STICK
+  Type: FURNITURE
+  Model: gearfinder/machinery/harvester
+  Furniture:
+    CanRotate: false
+    Material: STICK
+    Model: gearfinder/machinery/harvester
+    Health: 5
+    Barriers:
+    - 0,0,0
+    DefaultState: power_off
+    States:
+      power_on:
+        Model: gearfinder/machinery/harvester
+  FurnitureSkills:
+  - totem{d=11;i=1;yo=0;onTick=skill_harvester-handler} @SelfLocation{y=1} ~onTimer:10 ?furnitureState{s=power_on} 
+  - skill{s=[
+      - skill{s=skill_harvester-on; delay=20} ?furnitureState{s=power_off}
+      - skill{s=skill_harvester-off;delay=20} ?furnitureState{s=power_on}
+      - sound{s=item.axe.scrape} @Self
+    ];cooldown=1} ~onInteract
+  - sound{s=block.bone_block.place;pitch=2} @Self ~onBlockPlace
+  - sound{s=block.bone_block.place;pitch=0} @Self ~onBlockBreak
+  - sound{s=block.lever.click} @Self ~onBlockRotate
+  - sound{s=entity.zombie.attack_wooden_door} @Self ~onDamaged
+
+machinery-harvester_addon-composter:
+  ItemUpdater:
+    Version: 1
+    PreserveStatRatio: true
+  Display: "<#735656>[<#D9C69C>Mᴀᴄʜɪɴᴇ<#735656>] <bold>» <reset><#D9C69C>Aᴜᴛᴏ-Cᴏᴍᴘᴏѕᴛᴇʀ"
+  Lore: 
+    Template: GEAR_MACHINE
+    Type: <placeholder.logo_machine>
+    Tier: <placeholder.gear_tier_2>
+    Tech: <placeholder.gear_tech_mechanical>
+    item_effect_0: <placeholder.lore_machine_div>
+    item_effect_1: "<#735656>└ <white>愀 <gray>Rᴀɴɢᴇ <#735656><bold>» <reset><#735656>(<gray>12 ʙʟᴏᴄᴋѕ<#735656>)"
+    item_effect_2: "<#735656>└ <white>愀 <gray>Fᴇʀᴛɪʟɪᴢᴇѕ <#735656><bold>» <reset><#735656>(<gray>ᴄʀᴏᴘѕ<#735656>)"
+    item_effect_3: "<#735656>└ <white>愠 <gray>Dᴜʀᴀʙɪʟɪᴛʏ Pᴏɪɴᴛѕ <#735656><bold>» <reset><#735656>(<gray>5<#735656>)"
+    item_effect_4: "<#735656>└ <white>愂 <gray>Rᴇǫᴜɪʀᴇᴅ Mᴀᴄʜɪɴᴇ <#735656><bold>» <reset><#735656>(<gray>Hᴀʀᴠᴇѕᴛᴇʀ<#735656>)"
+  Id: STICK
+  Type: FURNITURE
+  Model: gearfinder/machinery/composter
+  Furniture:
+    CanRotate: false
+    Material: STICK
+    Model: gearfinder/machinery/composter
+    Health: 5
+    Barriers:
+    - 0,0,0
+    DefaultState: empty
+    States:
+      full:
+        Model: gearfinder/machinery/composter_full
+  FurnitureSkills:
+  - totem{d=11;i=1;yo=0;onTick=skill_composter-handler} @FurnitureInRadius{limit=1;sort=NEAREST;r=1.5;types=machinery-harvester} ~onTimer:10 ?furnitureState{s=full} 
+  - skill{s=[
+      - skill{s=skill_composter-full; delay=20} ?furnitureState{s=empty}
+      - skill{s=skill_composter-empty;delay=20} ?furnitureState{s=full}
+      - sound{s=item.axe.scrape} @Self
+    ];cooldown=1} ~onInteract
+  - sound{s=block.bone_block.place;pitch=2} @Self ~onBlockPlace
+  - sound{s=block.bone_block.place;pitch=0} @Self ~onBlockBreak
+  - sound{s=block.lever.click} @Self ~onBlockRotate
+  - sound{s=entity.zombie.attack_wooden_door} @Self ~onDamaged

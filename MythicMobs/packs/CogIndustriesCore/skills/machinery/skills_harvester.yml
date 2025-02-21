@@ -1,0 +1,120 @@
+#########################################################################
+#==============#
+# TOGGLE POWER |
+#==============#
+#########################################################################
+
+skill_harvester-on:
+  Conditions:
+  - furnitureState{s=power_off}
+  Skills:
+  - setFurnitureState{state=power_on}
+  - message{msg="<placeholder.gear_prefix><placeholder.machine_harvester_on>"} @Trigger
+
+skill_harvester-off:
+  Conditions:
+  - furnitureState{s=power_on}
+  Skills:
+  - setFurnitureState{state=power_off}
+  - message{msg="<placeholder.gear_prefix><placeholder.machine_harvester_off>"} @Trigger
+
+skill_composter-full:
+  TriggerConditions:
+  - wearing{slot=HAND;material=air} true
+  Conditions:
+  - furnitureState{s=empty}
+  Skills:
+  - setFurnitureState{state=full}
+  - message{msg="<placeholder.gear_prefix><placeholder.machine_composter_on>"} @Trigger
+
+skill_composter-empty:
+  Conditions:
+  - furnitureState{s=full}
+  Skills:
+  - setFurnitureState{state=empty}
+  - message{msg="<placeholder.gear_prefix><placeholder.machine_composter_off>"} @Trigger
+#########################################################################
+
+harvester_check-conveyor:
+  Skills:
+  - totem{d=11;i=1;yo=0;onTick=harvester_check-conveyor-skill} @FurnitureInRadius{limit=1;sort=NEAREST;r=1.5;types=machinery-conveyor_belt} 
+
+harvester_check-conveyor-skill:
+  Skills:
+  - effect:particles{p=reddust;color=#52cc7b} @Origin{y=1}
+  - sudoskill{s=[
+      - teleport @Origin{y=1}
+    ]} @IIR{r=12;conditions=[
+        - entityItemType{m=wheat,potato,carrot,beetroot,melon,pumpkin,melon_slice,sugar_cane} true
+        - hasaura{n=conveyor_moving} false
+      ]}
+
+#########################################################################
+#==========#
+# HANDLERS |
+#==========#
+#########################################################################
+
+skill_harvester-handler:
+  Skills:
+  - skill{s=harvester_check-conveyor} @SelfLocation
+  - particles{p=reddust;color=#D9C69C} @SelfLocation{y=1} 
+  - skill{s=harvester_collect-all} @Self
+
+skill_composter-handler:
+  Skills:
+  - particles{p=reddust;color=#52cc7b} @TargetedLocation{y=2}
+  - bonemeal{cd=120} @BlocksInRadius{blocktypes=WHEAT;r=10}
+  - bonemeal{cd=200} @BlocksInRadius{blocktypes=CARROTS;r=10} 
+  - bonemeal{cd=180} @BlocksInRadius{blocktypes=POTATOES;r=10} 
+  - bonemeal{cd=60}  @BlocksInRadius{blocktypes=BEETROOTS;r=10} 
+
+#########################################################################
+#=========#
+# HARVEST |
+#=========#
+#########################################################################
+
+harvester_collect-all:
+  Cooldown: 1
+  Skills:
+  - skill{s=harvester_collect-wheat}    @BlocksInRadius{blocktypes=WHEAT;r=10}
+  - skill{s=harvester_collect-carrot}   @BlocksInRadius{blocktypes=CARROTS;r=10}
+  - skill{s=harvester_collect-potato}   @BlocksInRadius{blocktypes=POTATOES;r=10}
+  - skill{s=harvester_collect-beetroot} @BlocksInRadius{blocktypes=BEETROOTS;r=10}
+
+harvester_collect-wheat:
+  Cooldown: 1
+  TargetConditions:
+  - blocktype{t=WHEAT[age=7]} true
+  Skills:
+  - effect:particles{p=reddust;color=#D9C69C}
+  - dropitem{i=wheat}
+  - setblock{m=WHEAT[age=0];md=0}
+
+harvester_collect-carrot:
+  Cooldown: 1
+  TargetConditions:
+  - blocktype{t=CARROTS[age=7]} true
+  Skills:
+  - effect:particles{p=reddust;color=#D9C69C}
+  - dropitem{i=CARROT}
+  - setblock{m=CARROTS[age=0];md=0}
+
+harvester_collect-potato:
+  Cooldown: 1
+  TargetConditions:
+  - blocktype{t=POTATOES[age=7]} true
+  Skills:
+  - effect:particles{p=reddust;color=#D9C69C}
+  - dropitem{i=POTATO}
+  - setblock{m=POTATOES[age=0];md=0}
+
+harvester_collect-beetroot:
+  Cooldown: 1
+  TargetConditions:
+  - blocktype{t=BEETROOTS[age=3]} true
+  Skills:
+  - effect:particles{p=reddust;color=#D9C69C}
+  - dropitem{i=BEETROOT}
+  - setblock{m=BEETROOTS[age=0];md=0}
